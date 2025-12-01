@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
         body {
             background: #1c2551;
@@ -18,35 +17,35 @@
             grid-auto-rows: 120px;
         }
 
-        /* Tall left green box */
+        
         .tall {
             grid-row: span 3;
         }
 
-        /* Top wide green box */
+        
         .wide {
             grid-column: 2 / 4;
         }
 
-        /* Top right red box */
+      
         .wrapper > div:nth-child(3) {
             grid-column: 4 / 5;
         }
 
-        /* Row 2 yellow + red */
+   
         .wrapper > div:nth-child(4) { grid-column: 2 / 3; }
         .wrapper > div:nth-child(5) { grid-column: 3 / 4; }
 
-        /* FULL width box */
+     
         .full {
             grid-row: span 2;   /* same row height */
         }
 
-        /* Row 3 red + yellow */
+       
         .wrapper > div:nth-child(7) { grid-column: 2 / 3; }
         .wrapper > div:nth-child(8) { grid-column: 3 / 4; }
 
-        /* Colors */
+      
         .green  { background: #61c44c; }
         .red    { background: #e53935; }
         .yellow { background: #f4b234; }
@@ -55,7 +54,6 @@
             border-radius: 3px;
         }
 
-        /* 📱 MOBILE VIEW — ALL IN ONE COLUMN */
         @media (max-width: 768px) {
             .wrapper {
                 grid-template-columns: 1fr 1fr;
@@ -63,7 +61,6 @@
             
             }
 
-            /* Remove all custom grid positions */
             .wrapper > div {
                 grid-column: auto !important;
                 grid-row: auto !important;
@@ -84,7 +81,7 @@
             
             }
 
-            /* Remove all custom grid positions */
+            
             .wrapper > div {
                 grid-column: auto !important;
                 grid-row: auto !important;
@@ -101,8 +98,8 @@
 
     </style>
 </head>
-
 <body>
+    <a style="color: black;" href="grid.html">BACK..</a>
 
 <div class="wrapper">
     <div class="box green tall"></div>
@@ -117,7 +114,7 @@
     <div class="box red"></div>
     <div class="box yellow"></div>
 </div>
-
 </body>
 </html>
+
 
