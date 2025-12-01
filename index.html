@@ -11,7 +11,7 @@
   padding: 20px;
 }
 
-/* Desktop layout */
+
 @media (min-width: 1200px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
@@ -47,14 +47,14 @@
   }
 }
 
-/* Mobile layout */
+
 @media (max-width: 767px) {
     .container {
         grid-template-columns: 1fr 1fr;
     }
     
     .a, .b, .c, {
-        grid-column: auto; /* Let items flow naturally */
+        grid-column: auto;
         background-color: yellow;
 
     }
@@ -62,10 +62,10 @@
 
 @media (max-width:576px) {
     .container {
-        grid-template-columns: 1fr;   /* single column */
+        grid-template-columns: 1fr;  
     }   
     .a, .b, .c, .d, .e {
-        grid-column: 1 / 2;  /* full width */
+        grid-column: 1 / 2;  
         background-color: aqua;
     }
     
@@ -74,6 +74,7 @@
     </style>
 </head>
 <body>
+    <a style="color: black;" href="grid.html">NEXT</a>
     <div class="container">
   <div class="item a">A</div>
   <div class="item b">B</div>
@@ -84,4 +85,5 @@
 
 
 </body>
+
 </html>
